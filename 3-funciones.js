@@ -10,14 +10,13 @@ despedir()
 // 1.2 Crea una función llamada `multiplicarPorDos` que tome un número como parámetro y devuelva el doble de ese número.
     // Tu código aquí
 function multiplicarPorDos(a) {
-    console.log(a*2)
+    return a*2
 }
 
 multiplicarPorDos(2)
 // 1.3 Crea una función llamada `esMayorDeEdad` que tome un número como parámetro y devuelva `true` si es mayor de 18, o `false` en caso contrario.
     // Tu código aquí
-
-let num = 20
+let edad = 20
 function esMayorDeEdad(a) {
     if(a>18) {
         return true
@@ -25,48 +24,38 @@ function esMayorDeEdad(a) {
         return false
     }
 }
-esMayorDeEdad(num) 
+esMayorDeEdad(edad) 
 // 2. Parámetros
 // 2.1 Crea una función llamada `multiplicar` que reciba dos parámetros, los multiplique y devuelva el resultado.
     // Tu código aquí
-let num = 2
-let num1 = 4
 function multiplicar(a, b){
     console.log(a*b)
 }
 multiplicar(2, 4)
 // 2.2 Escribe una función llamada `saludarPersonalizado` que reciba dos parámetros: `nombre` y `apellido`. La función debe devolver "Hola, [nombre] [apellido]".
     // Tu código aquí
-let nomb = "Hypatia"
-let apell = "Garcia"
 function saludarPersonalizado(nombre, apellido) {
-    console.log("Hola, " + nombre + " " + apellido)
+    return "Hola, " + nombre + " " + apellido
 }
-saludarPersonalizado(nomb, apell)
+saludarPersonalizado("Hypatia", "Garcia")
 // 2.3 Crea una función llamada `calcularPotencia` que reciba dos parámetros: base y exponente. La función debe devolver el resultado de elevar la base al exponente.
     // Tu código aquí
-let a = 2
-let b = 3
 function calcularPotencia(base, exponente) {
-    console.log(base**exponente)
+    return base**exponente
 }
-calcularPotencia(a, b)
+calcularPotencia(2, 3)
 // 2.4 Escribe una función llamada `restar` que reciba dos parámetros y devuelva la diferencia entre ellos.
     // Tu código aquí
-let x = 2
-let y = 3
     function restar(a, b) {
-    console.log(a - b)
+    return a - b
 }
-restar(x, y)
+restar(9, 2)
 // 2.5 Crea una función llamada `dividir` que reciba dos parámetros y devuelva el resultado de la división del primer parámetro por el segundo.
     // Tu código aquí
-let A = 15
-let B = 5
 function dividir(dividendo, divisor) {
-    console.log(dividendo/divisor)
+    return dividendo/divisor
 }
-dividir(A, B)
+dividir(15, 5)
 // 3. Function Expression
 // 3.1 Crea una **function expression** que multiplique dos números y asígnala a la variable `multiplicarDOS`.
     // Tu código aquí
@@ -77,7 +66,7 @@ multiplicarDOS(3, 4)
 // 3.2 Escribe una **function expression** llamada `saludar` que acepte un parámetro `nombre` y devuelva "Hola, [nombre]".
     // Tu código aquí
 const saludar = function(nombre) {
-    return console.log("Hola, " + nombre)
+    return "Hola, " + nombre
 }
 saludar("Hypatia")
 // 3.3 Crea una **function expression** llamada `esPar` que acepte un número como parámetro y devuelva `true` si el número es par, o `false` en caso contrario.
